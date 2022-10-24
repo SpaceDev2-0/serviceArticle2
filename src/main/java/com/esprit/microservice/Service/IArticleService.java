@@ -21,8 +21,8 @@ import io.micrometer.core.ipc.http.HttpSender.Response;
 
 public interface IArticleService {
 
-	ResponseEntity<Response> add(MultipartFile file, String Article)
-			throws JsonParseException, JsonMappingException, Exception;
+//	Article add(MultipartFile file, Article Article)
+	ResponseEntity<Response> add(MultipartFile file, String Article) throws JsonParseException, JsonMappingException, Exception;
 	
 	Article updateArticle(Article newArticle);
 	// ResponseEntity<String> deleteHotel(int id);

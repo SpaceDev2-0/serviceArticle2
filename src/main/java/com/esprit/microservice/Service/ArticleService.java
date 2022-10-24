@@ -78,6 +78,37 @@ public class ArticleService implements IArticleService {
 
 
     }
+	
+//	@Override
+//    public Article add(MultipartFile file, Article Article) throws JsonParseException, JsonMappingException, Exception
+//    {
+//
+//        System.out.println("Ok .............");
+////        Article s = new ObjectMapper().readValue(Article, Article.class);
+//        boolean isExit = new File(context.getRealPath("/Images/")).exists();
+//        if (!isExit)
+//        {
+//            new File (context.getRealPath("/Images/")).mkdir();
+//            System.out.println("mkdir success.............");
+//        }
+//        String filename = file.getOriginalFilename();
+//        String newFileName = FilenameUtils.getBaseName(filename)+"."+FilenameUtils.getExtension(filename);
+//        File serverFile = new File (context.getRealPath("/Images/"+File.separator+newFileName));
+//        try
+//        {
+//            System.out.println("Image");
+//            FileUtils.writeByteArrayToFile(serverFile,file.getBytes());
+//
+//        }catch(Exception e) {
+//            e.printStackTrace();
+//        }
+//
+//
+//        Article.setImage(newFileName);
+//
+//       return ArticleRepository.save(Article);
+//    }
+	
 
 	public Article updateArticle(Article newArticle) {
 			 return (ArticleRepository.save(newArticle));
